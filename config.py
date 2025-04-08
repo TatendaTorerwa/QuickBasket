@@ -12,19 +12,19 @@ load_dotenv()
 #Define a configuration class to store application settings
 class Config:
     #Get the database username from the environment variables
-    DB_USERNAME  os.environ.get("DB_USERNAME")
+    DB_USERNAME = os.environ.get("DB_USERNAME")
 
     #Get the database password from the environment variables
-    DB_PASSWORD  os.environ.get("DB_PASSWORD")
+    DB_PASSWORD = os.environ.get("DB_PASSWORD")
 
     #Get the database host
-    DB_HOST  os.environ.get("DB_HOST")
+    DB_HOST = os.environ.get("DB_HOST")
 
     #Get the port number used by the database
-    DB_PORT  os.environ.get("DB_PORT")
+    DB_PORT = os.environ.get("DB_PORT")
 
     #Get the database name
-    DB_NAME  os.environ.get("DB_NAME")
+    DB_NAME = os.environ.get("DB_NAME")
 
     #Get the secret key used for the JWT or session managemnt
     SECRET_KEY = os.environ.get("SECRET_KEY")
